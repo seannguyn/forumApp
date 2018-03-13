@@ -10,6 +10,6 @@ class Like extends Model
     //
     public function reply()
     {
-      $this->belongsTo(Reply::class);
+      return $this->belongsTo(Reply::class);
     }
 }
