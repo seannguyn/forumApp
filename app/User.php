@@ -2,6 +2,11 @@
 
 namespace App;
 
+use App\Model\Question;
+use App\Model\Reply;
+use App\Model\Category;
+use App\Model\Like;
+
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,4 +31,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function question($value='')
+    {
+      $this->hasMany(Question::class);
+    }
+
+    public function replies($value='')
+    {
+      $this->hasMany(Reply::class);
+    }
 }
