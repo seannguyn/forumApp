@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
+use App\Model\Reply;
 use App\Model\Question;
+use App\Model\Category;
+use App\Model\Like;
 use Illuminate\Http\Request;
 
 use App\Http\Resources\QuestionResource;

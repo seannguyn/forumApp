@@ -14,6 +14,7 @@ class Reply extends Model
     //
     protected $table = 'replies';
     // protected $fillable = ['title','body','slug'];
+    protected $guarded =[];
 
     public function user()
     {
