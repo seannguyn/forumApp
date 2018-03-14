@@ -13,7 +13,6 @@ class Reply extends Model
 {
     //
     protected $table = 'replies';
-    // protected $fillable = ['title','body','slug'];
     protected $guarded =[];
 
     public function user()
@@ -26,7 +25,7 @@ class Reply extends Model
       return $this->belongsTo(Question::class);
     }
 
-    public function like()
+    public function likes()
     {
       return $this->hasMany(Like::class);
     }

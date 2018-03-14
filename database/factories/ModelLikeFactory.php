@@ -11,7 +11,7 @@ $factory->define(App\Model\Like::class, function (Faker $faker) {
         'user_id' => function() {
           return User::all()->random();
         },
-        'reply_id' => function() {
+        'replies_id' => function() {
           return Reply::all()->random();
         },
 

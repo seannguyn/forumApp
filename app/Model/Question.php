@@ -14,7 +14,6 @@ class Question extends Model
 {
     //
     protected $table = 'questions';
-    // protected $fillable = ['title','body','slug','category_id','user_id'];
     protected $guarded = [];
 
     //get the slug
