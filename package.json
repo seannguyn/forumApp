@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "npm": "^5.7.1",
+        "vue-router": "^3.0.1",
         "vuetify": "^1.0.8"
     }
 }
